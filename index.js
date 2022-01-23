@@ -1,3 +1,5 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -5,9 +7,7 @@ const userRoute = require('./routes/user');
 const authRoute = require('./routes/auth');
 
 mongoose
-	.connect(
-		'mongodb+srv://gks1234:Gks1234@ecommerceapi.sgpqd.mongodb.net/shop?retryWrites=true&w=majority',
-	)
+	.connect(process.env.MONGO_URL)
 	.then(() => console.log(`DB is connected`))
 	.catch((error) => console.log(error));
 
