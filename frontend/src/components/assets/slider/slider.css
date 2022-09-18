@@ -1,0 +1,38 @@
+/* slider page  */
+
+.container-slider {
+}
+
+/* slider image page */
+.image-container {
+  border: 1px solid black;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.slider-image {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1663183536631-be6551377aeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+  transition: all 1s ease-out;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  color: white;
+}
+.right-arrow {
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 32px;
+  transform: translate(0, -50%);
+}

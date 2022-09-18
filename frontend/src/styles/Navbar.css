@@ -1,0 +1,35 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  color: white;
+  background-color: rgb(81, 74, 74);
+  list-style-type: none;
+}
+.ul-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  list-style-type: none;
+  color: white;
+}
+
+.ul-navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .navbar-container {
+    flex-direction: column;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
