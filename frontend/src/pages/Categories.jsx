@@ -13,7 +13,7 @@ const Categories = () => {
           return (
             <div>
               <CategoryItem im={im} />
-            </div>
+\            </div>
           );
         })}
       </div>

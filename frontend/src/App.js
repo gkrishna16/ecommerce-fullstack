@@ -2,8 +2,10 @@ import "./App.css";
 import Home from "./pages/Home";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Products from "./components/Products";
+import Products from "./pages/Products";
 import Cart from "./components/Cart";
+import Product from "./pages/Product";
+import Productslist from "./pages/Productslist";
 // import Navbar from "./components/Navbar";
 
 function App() {
@@ -13,8 +15,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
-            <Route path="/products/:category" element={<Products />} />
+            <Route path="/products/:category" element={<Product />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/productlist" element={<Productslist />} />
           </Routes>
         </BrowserRouter>
       </div>

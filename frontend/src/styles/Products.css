@@ -1,0 +1,43 @@
+.main-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 10px;
+}
+
+.info {
+  border: 1px solid black;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: all 1s ease;
+  background-color: rgba(184, 225, 227, 0.2);
+}
+
+.icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 2px;
+  padding: 2px;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.info:hover > .icon {
+  opacity: 1;
+}
+.info:hover {
+  background-color: rgb(192, 196, 198);
+}
+
+.icon:hover {
+  background-color: rgb(197, 175, 175);
+  transform: scale(1.1);
+}
